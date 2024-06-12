@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - jQuery_小瑪莉模擬</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="slotWrap">
+  <div class="option no1 active"><span>彩金10元</span></div>
+  <div class="option no2"><span>彩金3180元</span></div>
+  <div class="option no3"><span>儲值<br>額外10%獎勵<br>(最高318)</span></div>
+  <div class="option no4"><span>彩金318元</span></div>
+  <div class="option no5"><span>彩金668元</span></div>
+  <div class="option no6"><span>彩金30元</span></div>
+  <div class="option no7"><span>IPhone X<br>太空灰 256G</span></div>
+  <div class="option no8"><span>彩金80元</span></div>
+  <div class="option no9"><span>ROLEX<br>Submariner 116610LV<br>綠陶瓷潛航者機械錶</span></div>
+  <div class="option no10"><span>彩金688元</span></div>
+  <span class="clear"></span>
+</div>
+
+<!-- 按鈕區域 -->
+<div class="button-group">
+  <button id="start-draw" class="start-button">立即抽獎</button>
+  <button id="add-option">新增選項</button>
+  <button id="remove-option">刪除選項</button>
+</div>
+
+<!-- 彈窗 -->
+<div class="popup-wrap" id="letmeopen">
+  <div class="popup-box transform-out">
+    <h2 id="winPrizes"></h2>
+    <h3>恭禧中獎!</h3>
+    <p>提中獎品將於24小時內派送到您的帳號內，請於抽獎後儘快上線登錄，避免獎品時效過期。</p>
+    <a class="close-btn popup-close" href="#">OK</a>
+  </div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="./script.js"></script>
+</body>
+</html>
