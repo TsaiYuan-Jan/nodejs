@@ -1,26 +1,24 @@
 body {
   letter-spacing: 1px;
+  overflow: hidden; /* 防止滾動條 */
 }
 .clear {
   clear: both;
   display: block;
 }
 .slotWrap {
-  display: flex;
-  flex-wrap: wrap;
-  width: 800px;
-  margin: 0 auto;
-  background: #b3e5fc; /* 淡藍色 */
-  border-radius: 42px;
-  border: 20px solid #81d4fa; /* 淡藍色 */
-  padding: 2px;
-  box-shadow: 0 5px 0 2px #4fc3f7; /* 淡藍色 */
-  position: relative;
+  position: absolute; /* 覆蓋整個視窗 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
+
 .slotWrap .option {
+  position: absolute; /* 絕對定位 */
   width: 198px;
   height: 92px;
-  margin: 0 1px 8px;
+  margin: 0;
   background: #f8bbd0; /* 淡粉色 */
   color: #c2185b; /* 淡粉色 */
   display: flex;
@@ -29,8 +27,6 @@ body {
   text-align: center;
   border-radius: 20px;
   box-shadow: 0 2px 0 2px #f48fb1; /* 淡粉色 */
-  order: 0;
-  position: relative;
   transition: background 0.5s;
 }
 .slotWrap .option.active {
@@ -68,6 +64,9 @@ button:active {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
 }
 
 #start-draw {
