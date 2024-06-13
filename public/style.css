@@ -1,6 +1,8 @@
 body {
   letter-spacing: 1px;
   overflow: hidden; /* 防止滾動條 */
+  background: url('bg.png') no-repeat center center fixed; /* 背景圖片 */
+  background-size: cover; /* 使圖片覆蓋整個視窗 */
 }
 .clear {
   clear: both;
