@@ -91,7 +91,7 @@ function scatterPositions() {
   var options = document.querySelectorAll('.slotWrap .option');
   var slotWrap = document.querySelector('.slotWrap');
   var maxWidth = slotWrap.offsetWidth - 198; // 減去選項的寬度
-  var maxHeight = slotWrap.offsetHeight - 92; // 減去選項的高度
+  var maxHeight = slotWrap.offsetHeight - 92 - 100; // 減去選項的高度和按鈕區域高度
   var positions = [];
 
   options.forEach(option => {
